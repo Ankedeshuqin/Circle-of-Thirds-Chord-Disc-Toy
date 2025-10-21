@@ -1004,9 +1004,9 @@ document.addEventListener("keydown", function(e) {
 
             let invNotation = getChordNotation(g_Sel.row, g_Sel.col);
             if(notes.length == 4) {
-                invNotation = invNotation.replace(/7(?=\/|$)/, ["7", "56", "34", "2"][g_curEnhInvOrd]);
+                invNotation = invNotation.replace(/7(?=\/|$)/, ["7", "56", "34", "2"][curInvOrd]);
             } else {
-                invNotation = invNotation.replace(/(?=\/|$)/, ["", "6", "46"][g_curEnhInvOrd]);
+                invNotation = invNotation.replace(/(?=\/|$)/, ["", "6", "46"][curInvOrd]);
             }
 
             // 显示转位和弦信息

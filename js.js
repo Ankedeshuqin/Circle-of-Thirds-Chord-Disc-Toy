@@ -747,8 +747,7 @@ function select(row, col) {
     g_Cells[row][col].Hl.setAttribute("fill", HL_FILL.selected);
     playNotes(getChordNotes(row, col));
 
-    if(g_Hl.toString() == "-1,-1")
-        showChordInfo(row, col, DChordBox);
+    showChordInfo(row, col, DChordBox);
 
     flashingLoopID = setInterval(flashingLoop, 500);
 }
